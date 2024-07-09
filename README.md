@@ -1,1 +1,2 @@
-My first ever project for practicing JavaScript, HTML, and CSS
+# Project
+One of my first projects to practice HTML, CSS, and JavaScript, created in 2022
