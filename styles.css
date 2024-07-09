@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+
+:root {
+  --color-black: #2c2b2b;
+  --color-white: #fffcf7;
+  --color-light-blue: #b8cef8;
+  --color-blue: #a1b5d8;
+  --color-light-green: #e4f0d0;
+  --color-green: #c2d8b9;
+}
+
+html {
+  background-color: var(--color-black);
+  font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+.container-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 6.5rem;
+  min-width: 230px;
+  height: 80px;
+  margin: 1rem;
+  border-radius: 4.5rem;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.term,
+.def {
+  width: 320px;
+  height: 180px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.statistika {
+  padding-left: 1.5rem;
+  color: var(--color-white);
+}
+
+#stat-header {
+  font-size: 2rem;
+}
+
+#stat {
+  font-size: 1.4rem;
+  line-height: 5rem;
+}
+
+.btn-stats {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-left: 5.3rem;
+}
+
+#vim,
+#nejistota,
+#nevim {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.button_arrow {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 2rem;
+  cursor: pointer;
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-menu {
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1.5rem 2.5rem;
+  letter-spacing: 1px;
+}
+
+.btn-menu:hover {
+  background-color:#fffcf756
+}
+
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+button,
+div {
+  background-color: transparent;
+}
+
+.eko {
+  color: var(--color-green);
+  border: 6px solid var(--color-green);
+}
+
+.ivt {
+  color: var(--color-light-green);
+  border: 6px solid var(--color-light-green);
+}
+
+.ang {
+  color: var(--color-blue);
+  border: 6px solid var(--color-blue);
+}
+
+.ces {
+  color: var(--color-light-blue);
+  border: 6px solid var(--color-light-blue);
+}
+
+
+@media only screen and (max-width: 885px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .container-main {
+    display: block;
+  }
+
+  .card {
+    width: 90px;
+    margin: 1rem auto;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .btn-stats {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin: 0 4rem;
+    padding: 0;
+  }
+
+  .statistika {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    min-width: 40px;
+    height: 50px;
+    font-size: 1.75rem
+  }
+
+  .btn-stats {
+    margin: 0;
+    padding: 0;
+  }
+}

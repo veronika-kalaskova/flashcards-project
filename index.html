@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flashcards</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="effects.css">
+    </head>
+
+    <body>
+        <div id="menuPage">
+            <header>
+                <h1>Flashcards</h1>
+            </header>
+        
+            <div class="container-main">
+
+                <div>
+                    <div class="eko card" id="item">Biologie</div>
+                    <div class="ivt card" id="item">Fyzika</div>
+                </div>
+                <div>
+                    <div class="ang card" id="item">Chemie</div>
+                    <div class="ces card" id="item">Matematika</div>
+                </div>
+            </div>  
+        </div>
+
+        <div class="hidden" id="cardPage">
+            <header>
+                <button class="btn-menu">Hlavní menu</button>
+                <h1 class="cardHeader"></h1>
+            </header>
+        
+            <div class="container">
+                
+                <div class="btn-stats hidden">
+                    <div id="vim">✓</div>
+                    <div id="nejistota">?</div>
+                    <div id="nevim">X</div>
+                </div>
+        
+                <div class="card-main">
+                    <div class="term card" id="termin"></div>
+                    <div class="def hidden card" id="definice"></div>
+                </div>
+        
+                <div class="statistika hidden">
+                    <div id="stat-header">Statistika</div>
+                    <div class="right" id="stat">Správně: <span class="rightNumber">0</span></div>
+                    <div class=" revise" id="stat">K opakování: <span class="reviseNumber">0</span></div>
+                    <div class="wrong" id="stat">Špatně: <span class="wrongNumber">0</span></div>
+                </div>
+        
+            </div>
+            
+            <div class="arrows">
+                <button class="button_arrow" id="zpet">Zpět</button>
+                <button class="button_arrow" id="dalsi">Další</button>
+            </div>
+
+           
+        
+        </div>
+        
+        <script src="/script.js"></script>
+    </body>
+    
+</html>
